@@ -15,6 +15,8 @@
 		96CEBCFC1BCE521400A16356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CEBCFA1BCE521400A16356 /* LaunchScreen.storyboard */; };
 		96CEBD071BCE521500A16356 /* ZJTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CEBD061BCE521500A16356 /* ZJTableViewTests.m */; };
 		96CEBD121BCE521500A16356 /* ZJTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CEBD111BCE521500A16356 /* ZJTableViewUITests.m */; };
+		96CEBD231BCE525200A16356 /* ZJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CEBD201BCE525200A16356 /* ZJTableView.m */; settings = {ASSET_TAGS = (); }; };
+		96CEBD241BCE525200A16356 /* ZJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CEBD221BCE525200A16356 /* ZJTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		96CEBD0D1BCE521500A16356 /* ZJTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CEBD111BCE521500A16356 /* ZJTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJTableViewUITests.m; sourceTree = "<group>"; };
 		96CEBD131BCE521500A16356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96CEBD1F1BCE525200A16356 /* ZJTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTableView.h; sourceTree = "<group>"; };
+		96CEBD201BCE525200A16356 /* ZJTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTableView.m; sourceTree = "<group>"; };
+		96CEBD211BCE525200A16356 /* ZJTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTableViewCell.h; sourceTree = "<group>"; };
+		96CEBD221BCE525200A16356 /* ZJTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				96CEBCF01BCE521400A16356 /* AppDelegate.m */,
 				96CEBCF21BCE521400A16356 /* ViewController.h */,
 				96CEBCF31BCE521400A16356 /* ViewController.m */,
+				96CEBD1F1BCE525200A16356 /* ZJTableView.h */,
+				96CEBD201BCE525200A16356 /* ZJTableView.m */,
+				96CEBD211BCE525200A16356 /* ZJTableViewCell.h */,
+				96CEBD221BCE525200A16356 /* ZJTableViewCell.m */,
 				96CEBCF51BCE521400A16356 /* Main.storyboard */,
 				96CEBCF81BCE521400A16356 /* Assets.xcassets */,
 				96CEBCFA1BCE521400A16356 /* LaunchScreen.storyboard */,
@@ -272,7 +282,9 @@
 			files = (
 				96CEBCF41BCE521400A16356 /* ViewController.m in Sources */,
 				96CEBCF11BCE521400A16356 /* AppDelegate.m in Sources */,
+				96CEBD241BCE525200A16356 /* ZJTableViewCell.m in Sources */,
 				96CEBCEE1BCE521400A16356 /* main.m in Sources */,
+				96CEBD231BCE525200A16356 /* ZJTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
