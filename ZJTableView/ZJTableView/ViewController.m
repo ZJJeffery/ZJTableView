@@ -54,12 +54,20 @@
         self.labelBlue.text = @"滚动";
     }else if (pan.state == UIGestureRecognizerStateChanged) {
         CGFloat y = [pan translationInView:self.tableView].y;
-        CGRect bounds = CGRectMake(0, self.beganY - y, self.tableView.bounds.size.width, self.tableView.bounds.size.height);
+        CGFloat realY = sqrt(y) * sqrt(y / 10);
+        if (y < 0) {
+            realY = y;
+        }
+        CGRect bounds = CGRectMake(0, self.beganY - realY, self.tableView.bounds.size.width, self.tableView.bounds.size.height);
         self.tableView.bounds = bounds;
     }else if (pan.state == UIGestureRecognizerStateEnded){
         self.labelRed.text = @"停止";
         self.labelBlue.text = @"停止";
-        
+        if (self.tableView.bounds.origin.y != 0) {
+            [UIView animateKeyframesWithDuration:0.3 delay:0 options:0 animations:^{
+                self.tableView.bounds = CGRectMake(0, 0, self.tableView.bounds.size.width, self.tableView.bounds.size.height);
+            } completion:nil];
+        }
     }
 }
 #pragma mark 懒加载
